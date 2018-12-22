@@ -1,0 +1,142 @@
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+
+* html .row { height: 1%; }
+.row { display: block; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: white;
+}
+.wrapper {
+	width: 100%;
+}
+.header {
+    padding-bottom: 1%;
+    width: 100%;
+    background-color: #7FFFD4;
+    font-size: 25px;    
+}
+.in-head {
+   background-color: #7FFFD4;    
+}
+.header ul {
+  display: inline-table;
+  position: relative;
+}
+.header ul ul{
+	display: none;
+  position: absolute;
+  top: 100%;
+}
+.header ul ul li {
+  float: none;
+  position: relative;
+}
+.header ul ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.header ul li:hover > ul {
+	display: block;
+}
+.header li{
+	list-style: none;
+	float: left;
+	width: 10%;
+	min-width: 140px;
+}
+.header li a{
+	text-decoration: none;
+	display: block;
+	color: white;
+	background: #31baf5;
+	padding: 3%;
+	border-bottom: 2px solid #1c0600;
+}
+.header li a:hover {
+  color: white;
+  background: #ff947f;
+}
+.content {
+    width: 36%;
+    float: left;
+}
+.content img {
+  width: 35%;
+  float:left;  
+}
+.content h6 {
+  text-align: center;  
+}
+.in-content i{
+  margin-right: 20%;
+  float:right;
+}
+.content ul{
+  margin-left:20px;
+  text-align:left;
+}
+.in-content {
+	text-align:center;
+}
+.vid1 video {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 74%;
+}
+.sidebar {
+   width: 32%;
+   float: left;
+   padding-top: 9%;
+   padding-bottom: 9%;
+}
+.sidebar img {
+   display:block;
+   width: 30%;
+   margin:10px;
+   margin-left:auto;
+   margin-right:auto;  
+}
+.sidebar1 {
+   width: 32%;
+   float: left;
+   padding-top: 1%;
+   padding-bottom: 2%;
+}
+.sidebar1 img {
+   display:block;
+   width: 47%;
+   margin:10px;
+   margin-left:auto;
+   margin-right:auto;   
+}
+.footer {
+    float: right;
+    position: relative;
+    background-color: white;     
+}
+@media print {
+  .content {
+    width: 100%;
+  }
+    .sidebar {
+        display: none;
+    }
+    .sidebar1 {
+        display: none;
+    }
+
+
